@@ -1,0 +1,95 @@
+/* Container centers the app and sets a readable max-width */
+.app {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Form layout: input stretches, button stays fixed */
+.todo-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.todo-input:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+.add-button {
+  padding: 10px 20px;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #535bf2;
+}
+
+/* List removes default bullet styling */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Each to-do item is a flex row with text and a delete button */
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  border: 1px solid #eee;
+}
+
+/* Completed items get a strikethrough */
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.todo-text {
+  cursor: pointer;
+  flex: 1;
+}
+
+.delete-button {
+  padding: 5px 10px;
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-button:hover {
+  background-color: #cc0000;
+}
+
+.empty-message {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+}
