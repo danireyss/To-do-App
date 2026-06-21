@@ -23,3 +23,5 @@ COPY --from=backend-build /app/server/dist ./dist
 COPY --from=frontend-build /app/client/dist ./public
 EXPOSE 3000
 CMD ["node", "dist/index.js"]
+
+
